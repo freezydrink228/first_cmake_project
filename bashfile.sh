@@ -6,7 +6,7 @@ cd ${PWD}/first_cmake_project
 mkdir build
 cd build
 echo $1s
-cmake -DVALUE1=$1 ..
+cmake -DVALUE_CMAKE=$1 ..
 make
 ./main
 #debit .gitignore
