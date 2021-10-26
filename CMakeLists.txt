@@ -13,9 +13,9 @@ set(SOURCE_LIB foo.cpp)			# Тоже самое, но для библиотек�
 #	set(PLATF 1)
 #endif
 
-add_definitions(-DVALUE1 = ${VALUE})
+add_definitions(-DVALUE_SOURCE=${VALUE_CMAKE})
 
-message(${VALUE})
+message(${VALUE_CMAKE})
 
 add_library(foo STATIC ${SOURCE_LIB})	# Создание статической библиотеки с именем foo
 
